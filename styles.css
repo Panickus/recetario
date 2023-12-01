@@ -7,7 +7,59 @@
 	outline: none;
 }
 
-.logo {
-   width: 250px;
-   height: 250px;
+header {
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
+
+section {
+   display: grid;
+   grid-template-columns: auto;
+   padding: 10px 50px;
+}
+
+body {
+   background-color: #f8f9fa;
+   color: #495057;
+   font-family: Arial, Helvetica, sans-serif;
+ }
+ 
+ .container {
+   max-width: 800px;
+   border-color: 1px solid red;
+ }
+ 
+ .mt-5 {
+   margin-top: 3rem !important;
+ }
+ 
+ .card-container {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   border-color: 1px solid red; /* Ajusta el espacio entre las tarjetas */
+ }
+ 
+ .card {
+   width: calc(33.333% - 20px); /* Calcula el ancho para tres tarjetas por línea */
+   margin-bottom: 35px;
+ }
+
+ h5 {
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 18px;
+ }
+ 
+ .btn {
+   padding: 10px 20px; /* Ajusta el espaciado interno según sea necesario */
+   font-size: 16px; /* Tamaño de fuente */
+   text-decoration: none; /* Evitar subrayado en enlaces */
+   cursor: pointer;
+   margin-top: 15px; /* Cambiar el cursor al pasar por encima */
+   border-color: 1px solid red;
+
+ }
+ /* Agrega más estilos según tus necesidades */
+
+ 
