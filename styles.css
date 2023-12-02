@@ -1,49 +1,111 @@
 *{
-	margin: 0;
-	padding: 0;
 	list-style: none;
 	text-decoration: none;
 	border: none;
 	outline: none;
 }
 
+body {
+  background-color: #eeeeee;
+  color: #303336;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 header {
+   max-width: 1440px;
    display: flex;
    align-items: center;
-   justify-content: center;
+   justify-content: space-around;
+
+}
+
+.logo {
+   display: flex;
+}
+
+header img {
+  display: flex;
+  align-items: flex-start;
+  width: 100px;
+  height: 100px;
+}
+
+nav ul {
+  display: flex;
+  align-items: baseline;
+}
+
+nav li {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+nav a {
+  color: #030303; /* Color del texto en el estado normal */
+  text-decoration: none; /* Quita el subrayado de los enlaces */
+  margin-right: 25px; 
+}
+
+nav a:hover {
+  color: #dd8839;
+}
+
+#search {
+  border: 1px solid #808080;
+  border-radius: 5px;
+  max-width: 150px;
+  height: 25px;
+  font-size: 14px;
+}
+
+button {
+  display: inline-block;
+  padding: 5px 20px;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid #808080; /* Color del borde del botón en el estado normal */
+  border-radius: 5px; /* Bordes redondeados */
+  color: #000000; /* Color del texto en el estado normal */
+  background-color: #fff; 
 }
 
 section {
-   display: grid;
-   grid-template-columns: auto;
+   display: flex;
+   align-items: center;
+
    padding: 10px 50px;
 }
 
-body {
-   background-color: #f8f9fa;
-   color: #495057;
-   font-family: Arial, Helvetica, sans-serif;
- }
+.container h2 {
+  color: #303336;
+  margin-left: 110px;
+}
  
  .container {
-   max-width: 800px;
-   border-color: 1px solid red;
+   max-width: 1440px;
  }
  
- .mt-5 {
+.mt-5 {
    margin-top: 3rem !important;
  }
  
  .card-container {
    display: flex;
    flex-wrap: wrap;
-   justify-content: space-between;
-   border-color: 1px solid red; /* Ajusta el espacio entre las tarjetas */
+   justify-content: space-around;
  }
  
  .card {
    width: calc(33.333% - 20px); /* Calcula el ancho para tres tarjetas por línea */
-   margin-bottom: 35px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content:space-evenly;
+   align-items: flex-start;
+   border: 1px solid #808080;
+   border-radius: 15px;
+   padding: 0 20px;
  }
 
  h5 {
@@ -51,13 +113,17 @@ body {
    font-size: 18px;
  }
  
- .btn {
-   padding: 10px 20px; /* Ajusta el espaciado interno según sea necesario */
-   font-size: 16px; /* Tamaño de fuente */
+ .btn { 
+   font-size: 16px;
+   font-weight: bold; /* Tamaño de fuente */
    text-decoration: none; /* Evitar subrayado en enlaces */
    cursor: pointer;
    margin-top: 15px; /* Cambiar el cursor al pasar por encima */
-   border-color: 1px solid red;
+   border:1px solid #808080;
+   border-radius: 10px;
+   padding: 8px;
+   background-color: #303336;
+   color: #dd8839;
 
  }
  /* Agrega más estilos según tus necesidades */
